@@ -247,10 +247,9 @@ public class CalculadoraDark extends JFrame implements ActionListener {
 
 //		System.out.println(comando);
 		if ("=".equals(comando)) {
-			// Evaluate the expression and display the result
-			String expression = textFieldDisplay.getText();
-			double result = verificarExpressao(expression);
-			textFieldDisplay.setText(Double.toString(result));
+			String expressao = textFieldDisplay.getText();
+			double resultado = verificarExpressao(expressao);
+			textFieldDisplay.setText(Double.toString(resultado));
 		} else if ("C".equals(comando)) {
 			// limpar display
 			textFieldDisplay.setText("0");
